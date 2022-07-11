@@ -6,7 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class LableTempEntity {
     @Id
-    private Long id;//
+    private Long id;
     private String name;
     private Long content;
 
