@@ -41,9 +41,10 @@ public class TransportUnitEntity {
     public TransportUnitEntity() {
 
     }
-    public TransportUnitEntity(Long id, String name) {
+    public TransportUnitEntity(Long id, String name, Long locationId) {
         this.id = id;
         this.name = name;
+        this.locationId = locationId;
     }
 }
 

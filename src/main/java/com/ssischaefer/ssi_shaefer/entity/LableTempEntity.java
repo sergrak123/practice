@@ -6,8 +6,9 @@ import javax.persistence.Id;
 @Entity
 public class LableTempEntity {
     @Id
-    private Long id;
+    private Long id;//
     private String name;
+    private Long content;
 
     public Long getId() {
         return id;
@@ -39,7 +40,7 @@ public class LableTempEntity {
         this.content = content;
     }
 
-    private Long content;
+
 
     public LableTempEntity() {
 
