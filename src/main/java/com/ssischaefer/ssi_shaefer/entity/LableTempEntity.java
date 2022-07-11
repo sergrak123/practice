@@ -1,26 +1,13 @@
 package com.ssischaefer.ssi_shaefer.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class TransportUnitEntity {
-
+public class LableTempEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    public Long locationId;
-
-    public Long getLocationId() {
-        return locationId;
-    }
-
-    public void setLocationId(Long locationId) {
-        this.locationId = locationId;
-    }
 
     public Long getId() {
         return id;
@@ -38,12 +25,23 @@ public class TransportUnitEntity {
         this.name = name;
     }
 
-    public TransportUnitEntity() {
-
+    public Long getContent() {
+        return content;
     }
-    public TransportUnitEntity(Long id, String name) {
+
+    public void setContent(Long content) {
+        this.content = content;
+    }
+
+    public LableTempEntity(Long id, String name, Long content) {
         this.id = id;
         this.name = name;
+        this.content = content;
+    }
+
+    private Long content;
+
+    public LableTempEntity() {
+
     }
 }
-
