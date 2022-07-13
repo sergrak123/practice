@@ -1,9 +1,8 @@
 package com.ssischaefer.ssi_shaefer.entity;
-
 import javax.persistence.*;
 
 @Entity
-@Table//(name = "Printer")
+@Table(name = "Printer")
 public class PrinterEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +17,6 @@ public class PrinterEntity {
         this.labelTemplateId = labelTemplateId;
         this.locationId = locationId;
     }
-
     public PrinterEntity() {
 
     }

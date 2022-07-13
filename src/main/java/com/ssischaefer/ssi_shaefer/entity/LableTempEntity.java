@@ -8,7 +8,7 @@ public class LableTempEntity {
     @Id
     private Long id;
     private String name;
-    private Long content;
+    private String content;
 
     public Long getId() {
         return id;
@@ -26,15 +26,15 @@ public class LableTempEntity {
         this.name = name;
     }
 
-    public Long getContent() {
+    public String getContent() {
         return content;
     }
 
-    public void setContent(Long content) {
+    public void setContent(String content) {
         this.content = content;
     }
 
-    public LableTempEntity(Long id, String name, Long content) {
+    public LableTempEntity(Long id, String name, String content) {
         this.id = id;
         this.name = name;
         this.content = content;
